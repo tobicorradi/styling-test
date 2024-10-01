@@ -6,6 +6,7 @@ import styles from "./FirmFacts.module.scss";
 export const FirmFacts = () => {
   return (
     <section className={styles.container}>
+      <h1 className={styles.title}>Firm Facts</h1>
       <div className={styles.grid}>
         <FirmCard align="center">
           <Button

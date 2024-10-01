@@ -10,3 +10,9 @@
 body {
   background-color: $secondary-gray;
 }
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
