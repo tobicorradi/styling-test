@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .defaultCard, .borderCard {
   display: flex;
   justify-content: center;
@@ -11,7 +13,7 @@
     padding-right: 16px;
     transition: background-color 0.3s ease;
     &:hover {
-      background-color: #07C06A; //TODO: make it a variable
+      background-color: $primary-green;
     }
   }
   
@@ -21,7 +23,7 @@
     border: 15px solid transparent;
     transition: border-color 0.3s ease;
     &:hover {
-      border-color: #07C06A;
+      border-color: $primary-green;
     }
   }
   

@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 @mixin line-clamp($lines) {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -15,7 +17,7 @@
     align-items: center;
     max-width: 310px;
     padding: 11px 30px;  
-    background-color: #2D3E4E;
+    background-color: $secondary-gray;
     color: white;
     gap: 16px;
     height: 70px;
@@ -31,7 +33,7 @@
     &:hover {
       &:not(.disabled) {
         border-color: white;
-        background-color: #07C06A;
+        background-color: $primary-green;
       }
     }
   }
@@ -61,5 +63,5 @@
 
 .disabled {
     cursor: not-allowed;
-    background-color: #AAAAAA;
+    background-color: $disabled;
 }
