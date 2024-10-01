@@ -1,9 +1,10 @@
-import "./app.scss";
+import { FirmFacts } from "./components";
+import "./app.module.scss";
 
 export const App = () => {
   return (
-    <>
-      <h1 className="test">Hello World</h1>
-    </>
+    <main>
+      <FirmFacts />
+    </main>
   );
 };
