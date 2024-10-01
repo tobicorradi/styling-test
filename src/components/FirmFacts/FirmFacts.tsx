@@ -10,9 +10,9 @@ export const FirmFacts = () => {
         <FirmCard />
         <FirmCard />
         <FirmCard />
-        <FirmCard />
-        <FirmCard />
-        <FirmCard />
+        <FirmCard variant="border" />
+        <FirmCard variant="border" />
+        <FirmCard variant="border" />
       </div>
     </section>
   );

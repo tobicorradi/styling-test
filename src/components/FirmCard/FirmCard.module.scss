@@ -1,17 +1,19 @@
+.defaultCard, .borderCard {
+  background-color: white;
+}
+
 .defaultCard {
-    background-color: #fca373;
     transition: background-color 0.3s ease;
     &:hover {
-      background-color: green;
+      background-color: #07C06A; //TODO: make it a variable
     }
   }
   
-  .borderCard {
-    background-color: #fca373;
-    border: 2px solid transparent;
+.borderCard {
+    border: 15px solid transparent;
     transition: border-color 0.3s ease;
     &:hover {
-      border-color: green;
+      border-color: #07C06A;
     }
   }
   
