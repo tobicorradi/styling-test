@@ -1,0 +1,59 @@
+@mixin line-clamp($lines) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+
+.defaultButton, .iconButton {
+    border: 0;
+    width: 100%;
+    cursor: pointer;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    max-width: 310px;
+    padding: 11px 30px;  
+    text-align: left;
+    background-color: #2D3E4E;
+    color: white;
+    gap: 16px;
+    height: 70px;
+    border-radius: 37px;
+    border: 2px solid transparent;
+
+}
+
+.defaultButton {
+    transition: background-color 0.3s ease;
+    &:hover {
+        border-color:  white;
+        background-color: #07C06A;
+    }
+}
+
+.icon {
+    width: 70px;
+}
+
+.text {
+    line-height: 24px;
+}
+
+.defaultButton .text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip; 
+}
+
+.iconButton .text {
+    @include line-clamp(2);
+    white-space: normal; 
+    word-wrap: break-word;
+}
+
+.disabled {
+    cursor: not-allowed;
+    background-color: #AAAAAA;
+}
