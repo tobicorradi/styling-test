@@ -1,10 +1,19 @@
 import { FirmCard } from "../FirmCard";
 
+import styles from "./FirmFacts.module.scss";
+
 export const FirmFacts = () => {
   return (
-    <section>
-      <h1>Firm Facts</h1>
-      <FirmCard />
+    <section className={styles.container}>
+      <div className={styles.grid}>
+        <FirmCard />
+        <FirmCard />
+        <FirmCard />
+        <FirmCard />
+        <FirmCard />
+        <FirmCard />
+        <FirmCard />
+      </div>
     </section>
   );
 };

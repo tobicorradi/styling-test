@@ -1,0 +1,17 @@
+.defaultCard {
+    background-color: #fca373;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: green;
+    }
+  }
+  
+  .borderCard {
+    background-color: #fca373;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    &:hover {
+      border-color: green;
+    }
+  }
+  
