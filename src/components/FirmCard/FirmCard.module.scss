@@ -1,8 +1,14 @@
 .defaultCard, .borderCard {
+  display: flex;
+  justify-content: center;
   background-color: white;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .defaultCard {
+    padding-left: 16px;
+    padding-right: 16px;
     transition: background-color 0.3s ease;
     &:hover {
       background-color: #07C06A; //TODO: make it a variable
@@ -10,6 +16,8 @@
   }
   
 .borderCard {
+    padding-left: 8px;
+    padding-right: 8px;
     border: 15px solid transparent;
     transition: border-color 0.3s ease;
     &:hover {
@@ -17,3 +25,15 @@
     }
   }
   
+
+.align-start {
+  align-items: flex-start; 
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end; 
+}

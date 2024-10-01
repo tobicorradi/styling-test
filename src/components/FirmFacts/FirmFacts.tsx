@@ -7,22 +7,22 @@ export const FirmFacts = () => {
   return (
     <section className={styles.container}>
       <div className={styles.grid}>
-        <FirmCard>
+        <FirmCard align="center">
           <Button
             variant="icon"
             text="This is a two line button that termintes with dynamic truncate dots"
           />
         </FirmCard>
-        <FirmCard>
+        <FirmCard align="center">
           <Button
             variant="icon"
             text="This is a two line button that termintes with dynamic truncate dots"
           />
         </FirmCard>
-        <FirmCard>
+        <FirmCard align="center">
           <Button text="This is a one line button" />
         </FirmCard>
-        <FirmCard>
+        <FirmCard align="center">
           <Button
             variant="icon"
             text="This is a two line button that termintes with dynamic truncate dots"

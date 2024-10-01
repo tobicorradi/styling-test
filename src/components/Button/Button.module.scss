@@ -15,7 +15,6 @@
     align-items: center;
     max-width: 310px;
     padding: 11px 30px;  
-    text-align: left;
     background-color: #2D3E4E;
     color: white;
     gap: 16px;
@@ -25,13 +24,17 @@
 
 }
 
+
 .defaultButton {
-    transition: background-color 0.3s ease;
+    justify-content: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
     &:hover {
-        border-color:  white;
+      &:not(.disabled) {
+        border-color: white;
         background-color: #07C06A;
+      }
     }
-}
+  }
 
 .icon {
     width: 70px;
@@ -45,12 +48,15 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip; 
+    text-align: center;
+
 }
 
 .iconButton .text {
     @include line-clamp(2);
     white-space: normal; 
     word-wrap: break-word;
+    text-align: left;
 }
 
 .disabled {
